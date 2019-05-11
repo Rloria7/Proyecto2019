@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 body {
   background:#000;
   margin: 0;
@@ -134,6 +137,19 @@ padding-bottom: 150px;
 .bg-dark {
   background: #5d8aa8;
   color: #f4f4f4;
+}
+.gotopbtn{
+  position:fixed;
+  width:50px;
+  heigth:50px;
+  background:blue;
+  bottom:40px;
+  right:50px;
+  text-decoration:none;
+  text-align:center;
+  line-height:50px;
+  color:#fff;
+  font-size:20px;
 }
 
 footer {
