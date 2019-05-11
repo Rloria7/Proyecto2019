@@ -141,8 +141,7 @@ padding-bottom: 150px;
 .gotopbtn{
   position:fixed;
   width:50px;
-  heigth:50px;
-  background:blue;
+  height:50px;
   bottom:40px;
   right:50px;
   text-decoration:none;
