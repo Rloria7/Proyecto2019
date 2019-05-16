@@ -64,6 +64,10 @@ color: #fff;
 padding-top: 5px;
 font-size: 25px;
 }
+.nav-menu li:hover > a,
+.nav-menu > .menu-active > a {
+  color: #18d26e;
+}
 .content {
   position: absolute;
   z-index: 1;
