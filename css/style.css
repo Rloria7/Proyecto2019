@@ -1,8 +1,9 @@
+
 html{
   scroll-behavior: smooth;
 }
 body {
-  background:#000;
+  background:#fff;
   margin: 0;
   color: #fff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -31,6 +32,8 @@ body {
   filter: blur(2px);
   -webkit-filter: blur(2px);
 }
+
+/* Contenedores */
 .container-fluid0{
 padding-top: 10px;
 padding-bottom: 10px;
@@ -39,6 +42,23 @@ padding-bottom: 10px;
 padding-top: 10px;
 padding-bottom: 10px;
 }
+.container-fluid5{
+padding-top: 10px;
+padding-bottom: 10px;
+}
+/* seccion trabajo */
+.container-card{
+  margin-top: 10px;
+  margin-left: 150px;
+  color: #000;
+  }
+  .card:hover{
+  transform: translateY(-20px);
+  box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+  transition: all 0.5s;
+  }
+
+  /* seccion fondos */
 .fondo1{
 background-image: url("../imagenes/bg3.jpg");
 background-size: cover;
@@ -52,21 +72,23 @@ background-position: center;
 background-attachment: fixed;
 }
 .fondo0{
-background-color: #96c5d6;
+background-color: #555;
+}
+.fondo3{
+background-color: #fff;
+color: #000;
 }
 .margenes1 h1{
 text-align: center;
 font-size: 50px;
 }
+
+/* seccion contenidos */
 .servicios{
+padding-top: 10px 10px;
 text-align: center;
 color: #fff;
-padding-top: 5px;
 font-size: 25px;
-}
-.nav-menu li:hover > a,
-.nav-menu > .menu-active > a {
-  color: #18d26e;
 }
 .content {
   position: absolute;
@@ -79,6 +101,14 @@ font-size: 25px;
   height: 350px;
   text-align: center;
   transition: all 1000ms;
+}
+.center{
+  color: #555;
+}
+.service h2{
+padding-top: 10px;
+text-align: center;
+color: #555;
 }
 
 .content .logo {
@@ -106,6 +136,14 @@ font-size: 25px;
 padding-top: 50px;
 padding-bottom: 20px;
 }
+.container-fluid1{
+padding-top: 150px;
+padding-bottom: 150px;
+}
+.container-fluid2{
+padding-top: 150px;
+padding-bottom: 150px;
+}
 
 .grid-3 {
   display: grid;
@@ -119,21 +157,10 @@ padding-bottom: 20px;
   grid-template-columns: repeat(2, 1fr);
 }
 
-.center {
-  text-align: center;
-  margin: auto;
-}
-
-.container-fluid1{
-padding-top: 150px;
-padding-bottom: 150px;
-}
-.container-fluid2{
-padding-top: 150px;
-padding-bottom: 150px;
-}
 
 .bg-light {
+  margin-top: 30px;
+  margin-bottom: 30px;
   background: #f4f4f4;
   color: #333;
 }
@@ -155,16 +182,22 @@ padding-bottom: 150px;
   font-size:20px;
 }
 
+#clientes .card:hover {
+  background:#424242;
+  color: #fff; 
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.7);
+  border-radius: 5px;
+  transform: scale(1.1);
+  transition:all 0.3s ease-in;
+  }
+  #clientes .card:hover h3,#clientes .card:hover i{
+  color:#fff; 
+  }
+
 footer {
-  padding: 2.2rem;
+  background-color: #424242;
   color: #fff;
 }
-
-footer p {
-  margin: 0;
-}
-
-
 
 .bounceInLeft {
   animation-duration: 2s;
@@ -183,7 +216,7 @@ footer p {
     height: 50vh;
   }
 
-  .content {
+  .content{
     top: 5%;
     margin-top: 5px;
   }
@@ -212,10 +245,11 @@ footer p {
 @media (max-height: 500px) {
   .content .title,
   .content .text {
-    display: none;
+  display: none;
   }
 
   .content {
     top: 0;
   }
 }
+
