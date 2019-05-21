@@ -55,7 +55,7 @@ padding-bottom: 10px;
   border-radius: 25px;
   transition: 0.5s ease-in;
 }
-}
+
 /* seccion trabajo */
 .container-card{
   margin-top: 10px;
@@ -94,8 +94,9 @@ font-size: 50px;
 }
 
 /* seccion contenidos */
+  
 .servicios{
-padding-top: 10px 10px;
+padding-top: 10px;
 text-align: center;
 color: #fff;
 font-size: 25px;
