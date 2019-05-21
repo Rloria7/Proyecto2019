@@ -46,6 +46,9 @@ padding-bottom: 10px;
 padding-top: 10px;
 padding-bottom: 10px;
 }
+.navbar{
+ background-color: transparent !important;
+}
 /* seccion trabajo */
 .container-card{
   margin-top: 10px;
