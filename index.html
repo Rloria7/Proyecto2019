@@ -8,11 +8,12 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   <link rel="shortcut icon" type="../imagenes/fl.jpg" href="./imagenes/fl.jpg"/>
-   <link rel="stylesheet" href="css/animate.css">
+  <script src="./js/wow.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="./css/animate.css">
   <link rel="stylesheet" href="css/style.css">
   <script>
-   new WOW().init();
-   </script>
+    new WOW().init();
+  </script>
   <title>Proyecto Final Ricardo</title>
 </head>
 <body>
@@ -29,15 +30,18 @@
         <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#servicios">Servicios</a>
+        <a class="nav-link text-black" href="#servicios">Servicios</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link text-black" href="#acerca">Nosotros</a>
+      </li>    
+      <li class="nav-item">
+        <a class="nav-link text-black" href="#clientes">Clientes</a>
+        <li class="nav-item">
+        <a class="nav-link text-black" href="#trabajo">Trabajos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#clientes">Clientes</a>
-      <li class="nav-item">
-        <a class="nav-link" href="#contacto">Contactos</a>
+        <a class="nav-link text-black" href="#contacto">Contactos</a>
       </li>
     </ul>
   </div>
@@ -46,7 +50,7 @@
     <!-- Header -->
    <header class="showcase">
     <div class="content">
-      <i class="fab fa-galactic-republic fa-8x"></i>
+      <i class="fab fa-galactic-republic fa-8x wow rotateIn" data-wow-duration="5s"></i>
       <div class="title">
         Im a Web Developer!
       </div>
@@ -58,33 +62,37 @@
 
   <!-- Services -->
   
-  <section id="servicios" class="services-seccion scrollflow -slide-top -opacity" id="Servicios">
-    <h1 class="servicios wow bounceInDown">Services</h1>
+  <section id="servicios" class="services-seccion">
+    <br><br>
+    <div class="service">
+      <h2 class="wow zoomInDown" data-wow-duration="1s">Servicios</h2>
+    </div>    
     <div class="container grid-3 center">
-
-      <div>
-        <i class="fas fa-space-shuttle fa-3x wow bounceInLeft"></i>
-        <br>
-        <h3 class="wow bounceInLeft">Design</h3>
-        <p class="wow bounceInLeft">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, reiciendis!
+      <div class="text-center">
+        <i class="fas fa-space-shuttle fa-3x wow fadeInLeftBig"></i>
+        <br><br>
+        <h3 class="text-center wow fadeInLeftBig">Design</h3>
+        <p class="text-center wow fadeInLeftBig">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, reiciendis!
           <br><br>
-          <button class="btn btn-outline-secondary wow bounceInLeft"type="button" name="button">Informacion</button>
+          <button class="btn btn-outline-secondary"type="button" name="button">Informacion</button>
         </p>
       </div>
-      <div>
-        <i class="fas fa-chalkboard-teacher fa-3x"></i>
-        <h3 class="wow bounceInUp">Courses</h3>
-        <p class="wow bounceInUp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, reiciendis!
+      <div class="text-center">
+        <i class="fas fa-chalkboard-teacher fa-3x wow fadeInUpBig"></i>
+        <br><br>
+        <h3 class="text-center wow fadeInUpBig">Courses</h3>
+        <p class="text-center wow fadeInUpBig">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, reiciendis!
           <br><br>
-          <button class="btn btn-outline-secondary wow bounceInUp"type="button" name="button">Informacion</button>
+          <button class="btn btn-outline-secondary wow fadeInUpBig"type="button" name="button">Informacion</button>
         </p>
       </div>
-      <div>
-        <i class="fas fa-briefcase fa-3x wow bounceInRight"></i>
-        <h3 class="wow bounceInRight">Freelancing Projects</h3>
-        <p class="wow bounceInRight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, reiciendis!
+      <div class="text-center">
+        <i class="fas fa-briefcase fa-3x wow fadeInRightBig"></i>
+        <br><br>
+        <h3 class="wow fadeInRightBig">Freelancing Projects</h3>
+        <p class="text-center wow fadeInRightBig">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, reiciendis!
           <br><br>
-          <button class="btn btn-outline-secondary wow bounceInRight"type="button" name="button">Informacion</button>
+          <button class="btn btn-outline-secondary wow fadeInRightBig"type="button" name="button">Informacion</button>
         </p>
       </div>
     </div>
@@ -93,234 +101,249 @@
   <!--section Parallax-->
    <section class="container-fluid1 fondo1">
      <div class="margenes1">
-       <h1 class="wow bounceInLeft">"Freelancing Developer"</h1>
+       <h1 class="wow heartBeat">"Freelancing Developer"</h1>
      </div>
    </section>
   
-  <!-- About -->
-  <section id="about" class="about bg-light">
+  <!-- Acerca -->
+  <section id="acerca" class="about bg-light">
     <div class="container">
       <div class="grid-2">
         <div class="center">
-          <i class="fas fa-laptop-code fa-10x wow wobble"></i>
+          <i class="fas fa-laptop-code fa-8x"></i>
         </div>
         <div>
-          <h3 class="text wow bounceInRight">About Us</h3>
-          <p class="wow bounceInRight">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non eos aperiam labore consectetur maiores ea magni exercitationem
+          <h3 class="text-black wow bounceInDown" data-wow-duration="2s">Nosotros</h3>
+          <p class="text-black wow bounceInUp" data-wow-delay="1s">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non eos aperiam labore consectetur maiores ea magni exercitationem
             similique laborum sed, unde, autem vel iure doloribus aliquid. Aspernatur explicabo consectetur consequatur non
             nesciunt debitis quos alias soluta, ratione, ipsa officia reiciendis.
             <br><br>
-            <button class="btn btn-primary wow flipInX" type="button" name="button">Acerca de</button>
+            <button class="btn btn-primary wow pulseIn" type="button" name="button">Acerca de</button>
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!--section franja-->
-    <section class="container-fluid0 fondo0"></section>
-
     <!--section Clientes 4 columnas-->
-    <section id="team">
-        <div class="container my-3 py-5 text-center">
-            <div class="row mb-5">
-                <div class="col">
-                    <h1>Our Team</h1>
-                    <p class="mt-3">Lorem ipsum dolor
-                         sit amet consectetur adipisicing 
-                         elit. Aliquam, cumque?</p>
-                         <hr>       
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="./imagenes/cl1.jpg" alt="team" class="img-fluid rounded-circle w-50 mb-3">
-                            <h3>Lorem, ipsum.</h3>
-                            <h5>Lorem, ipsum dolor.</h5>
-                            <p>Lorem ipsum dolor sit amet 
-                                consectetur adipisicing 
-                                elit. Ratione, mollitia.</p>
-                                <div class="d-flex flex-row justify-content-center">
-                                    <div class="p-4">
-                                        <a href="#"><i class="i fab fa-facebook"></i></a>
-                                    </div>
-                                    <div class="p-4">
-                                        <a href="#">
-                                        <i class="i fab fa-twitter"></i></a>
-                                    </div>
-                                    <div class="p-4">
-                                            <a href="#"><i class="i fab fa-instagram"></i> </a>
-                                     </div>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="./imagenes/cl2.jpg" alt="team" class="img-fluid rounded-circle w-50 mb-3">
-                                <h3>Lorem, ipsum.</h3>
-                                <h5>Lorem, ipsum dolor.</h5>
-                                <p>Lorem ipsum dolor sit amet 
-                                    consectetur adipisicing 
-                                    elit. Ratione, mollitia.</p>
-                                    <div class="d-flex flex-row justify-content-center">
-                                        <div class="p-4">
-                                            <a href="#"><i class="i fab fa-facebook"></i></a>
-                                        </div>
-                                        <div class="p-4">
-                                            <a href="#">
-                                            <i class="i fab fa-twitter"></i></a>
-                                        </div>
-                                        <div class="p-4">
-                                                <a href="#"><i class="i fab fa-instagram"></i> </a>
-                                         </div>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                            <div class="card">
-                                <div class="card-body">
-                                    <img src="./imagenes/cl3.jpg" alt="team" class="img-fluid rounded-circle w-50 mb-3">
-                                    <h3>Lorem, ipsum.</h3>
-                                    <h5>Lorem, ipsum dolor.</h5>
-                                    <p>Lorem ipsum dolor sit amet 
-                                        consectetur adipisicing 
-                                        elit. Ratione, mollitia.</p>
-                                        <div class="d-flex flex-row justify-content-center">
-                                            <div class="p-4">
-                                                <a href="#"><i class="i fab fa-facebook"></i></a>
-                                            </div>
-                                            <div class="p-4">
-                                                <a href="#">
-                                                <i class="i fab fa-twitter"></i></a>
-                                            </div>
-                                            <div class="p-4">
-                                                    <a href="#"><i class="i fab fa-instagram"></i> </a>
-                                             </div>
-                                        </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <img src="./imagenes/cl4.jpg" alt="team" class="img-fluid rounded-circle w-50 mb-3">
-                                        <h3>Lorem, ipsum.</h3>
-                                        <h5>Lorem, ipsum dolor.</h5>
-                                        <p>Lorem ipsum dolor sit amet 
-                                            consectetur adipisicing 
-                                            elit. Ratione, mollitia.</p>
-                                            <div class="d-flex flex-row justify-content-center">
-                                                <div class="p-4">
-                                                    <a href="#"><i class="i fab fa-facebook"></i></a>
-                                                </div>
-                                                <div class="p-4">
-                                                    <a href="#">
-                                                    <i class="i fab fa-twitter"></i></a>
-                                                </div>
-                                                <div class="p-4">
-                                                        <a href="#"><i class="i fab fa-instagram"></i> </a>
-                                                 </div>
-                                            </div>
-                                    </div>
-                                </div>
-                        </div>
+    <section id="clientes">
+    <div  class="container-fluid my-3 py-5 text-center fondo3" >
+        <div class="row">
+            <div class="col">
+                <h1 class="wow fadeInLeftBig" data-wow-duration="2s">Nuestros Clientes</h1>
+                <p class="wow fadeInRightBig mt-3" data-wow-duration="2s">Lorem ipsum dolor
+                     sit amet consectetur adipisicing 
+                     elit. Aliquam, cumque?</p>
+                <hr>       
             </div>
         </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="./imagenes/cl1.jpg" alt="team" class="img-fluid rounded-circle w-50  mb-3">
+                        <h3>Lorem, ipsum.</h3>
+                        <h5>Lorem, ipsum dolor.</h5>
+                        <p>Lorem ipsum dolor sit amet 
+                            consectetur adipisicing 
+                            elit. Ratione, mollitia.</p>
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="p-4">
+                                    <a href="#"><i class="i fab fa-facebook"></i></a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="#"><i class="i fab fa-twitter"></i></a>
+                                </div>
+                      <div class="p-4">
+                           <a href="#"><i class="i fab fa-instagram"></i> </a>
+                      </div>
+                  </div>
+              </div>
+             </div>
+          </div>
+              <div class="col-lg-3 col-md-6">
+                      <div class="card">
+                          <div class="card-body">
+                              <img src="./imagenes/cl2.jpg" alt="team" class="img-fluid rounded-circle w-50 mb-3">
+                              <h3>Lorem, ipsum.</h3>
+                              <h5>Lorem, ipsum dolor.</h5>
+                              <p>Lorem ipsum dolor sit amet 
+                                  consectetur adipisicing 
+                                  elit. Ratione, mollitia.</p>
+                                  <div class="d-flex flex-row justify-content-center">
+                                      <div class="p-4">
+                                          <a href="#"><i class="i fab fa-facebook"></i></a>
+                                      </div>
+                                      <div class="p-4">
+                                          <a href="#">
+                                          <i class="i fab fa-twitter"></i></a>
+                                      </div>
+                                      <div class="p-4">
+                                              <a href="#"><i class="i fab fa-instagram"></i> </a>
+                                       </div>
+                                  </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                          <div class="card">
+                              <div class="card-body">
+                                  <img src="./imagenes/cl3.jpg" alt="team" class="img-fluid rounded-circle w-50 mb-3">
+                                  <h3>Lorem, ipsum.</h3>
+                                  <h5>Lorem, ipsum dolor.</h5>
+                                  <p>Lorem ipsum dolor sit amet 
+                                      consectetur adipisicing 
+                                      elit. Ratione, mollitia.</p>
+                                      <div class="d-flex flex-row justify-content-center">
+                                          <div class="p-4">
+                                              <a href="#"><i class="i fab fa-facebook"></i></a>
+                                          </div>
+                                          <div class="p-4">
+                                              <a href="#">
+                                              <i class="i fab fa-twitter"></i></a>
+                                          </div>
+                                          <div class="p-4">
+                                                  <a href="#"><i class="i fab fa-instagram"></i> </a>
+                                           </div>
+                                      </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                              <div class="card">
+                                  <div class="card-body">
+                                      <img src="./imagenes/cl4.jpg" alt="team" class="img-fluid rounded-circle w-50 mb-3">
+                                      <h3>Lorem, ipsum.</h3>
+                                      <h5>Lorem, ipsum dolor.</h5>
+                                      <p>Lorem ipsum dolor sit amet 
+                                          consectetur adipisicing 
+                                          elit. Ratione, mollitia.</p>
+                                          <div class="d-flex flex-row justify-content-center">
+                                              <div class="p-4">
+                                                  <a href="#"><i class="i fab fa-facebook"></i></a>
+                                              </div>
+                                              <div class="p-4">
+                                                  <a href="#">
+                                                  <i class="i fab fa-twitter"></i></a>
+                                              </div>
+                                              <div class="p-4">
+                                                      <a href="#"><i class="i fab fa-instagram"></i> </a>
+                                               </div>
+                                          </div>
+                                  </div>
+                              </div>
+                          </div>
+          </div>
+      </div>
     </section>
-
-    <!--section franja-->
-      <section class="container-fluid0 fondo0"></section>
 
 
       <!--section Parallax-->
        <section class="container-fluid2 fondo2">
          <div class="margenes1">
-           <h1 class="rubberBand">"Web Designer"</h1>
+           <h1 class="wow fadeInUp" data-wow-delay="1s">"Web Designer"</h1>
          </div>
        </section>
+
+       <!-- Nuestro trabajo -->
+       <div id="trabajo" class="container-fluid5 pb-5">
+       <div  class="container-card">
+          <h1 class="text-center pt-5 wow zoomInDown" data-wow-duration="1s"> Nuestro Trabajo</h1>
+          <br><br>
+          <div class="row">
+              <div class="col-4-lg">
+                  <div class="card" style="width:23rem;">
+                      <img src="./imagenes/img2.png" alt="card one" class="card-img-top"> 
+                      <div class="card-body">
+                          <h5 class="card-title text-center">Paginas Web</h5>
+                          <p class="card-text text-center">
+                              Lorem ipsum dolor sit amet 
+                              consectetur adipisicing elit.
+                               Accusantium reprehenderit maiores, 
+                               numquam sequi labore laboriosam?
+                               <br><br>
+                               <a href="#" class="btn btn-secondary">Read</a>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-4-lg ml-3">
+                      <div class="card" style="width:23rem;">
+                              <img src="./imagenes/img3.png" alt="card two" class="card-img-top"> 
+                              <div class="card-body">
+                                  <h5 class="card-title text-center">Mantenimiento</h5>
+                                  <p class="card-text text-center">
+                                      Lorem ipsum dolor sit amet 
+                                      consectetur adipisicing elit.
+                                       Accusantium reprehenderit maiores, 
+                                       numquam sequi labore laboriosam?
+                                       <br><br>
+                                       <a href="#" class="btn btn-secondary">Read</a>
+                                  </p>
+                              </div>
+                          </div>  
+              </div>
+              <div class="col-4-lg ml-3">
+                      <div class="card" style="width:23rem;">
+                              <img src="./imagenes/img4.jpeg" alt="card three" class="card-img-top"> 
+                              <div class="card-body">
+                                  <h5 class="card-title text-center">Aplicaiones</h5>
+                                  <p class="card-text text-center">
+                                      Lorem ipsum dolor sit amet 
+                                      consectetur adipisicing elit.
+                                       Accusantium reprehenderit maiores, 
+                                       numquam sequi labore laboriosam?
+                                       <br><br>
+                                       <a href="#" class="btn btn-secondary">Read</a>
+                                </p>
+                        </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
   
 <!--  Boton arriba  -->
-  <a class="gotopbtn" href="#"><i class="fas fa-chevron-circle-up"></i> </a>
-  <a name="contacto"/>
- 
-  <!-Footer-->
-  <footer id="contactos">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
+  <a class="gotopbtn" href="#"><i class="fas fa-chevron-circle-up"></i> </a> 
 
-          <div class="col-lg-3 col-md-6 footer-info">
-            <h3>BizPage</h3>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
-          </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Home</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">About us</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Services</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h4>Contact Us</h4>
-            <p>
-              A108 Adam Street <br>
-              Heredia CR<br>
-              Costa Rica <br>
-              <strong>Phone:</strong>506-0000-0000<br>
-              <strong>Email:</strong> info@example.com<br>
-            </p>
-
-            <div class="social-links">
-              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-            </div>
-
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit"  value="Subscribe">
-            </form>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
+  <!-- Footer -->
+<footer id="contacto"class="page-footer special-color-dark pt-2">
     <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong>Ricardo Loria</strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-      
-        Designed by <a href="https://rloria.com/">Ricardo</a>
-      </div>
+      <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+          <a class="btn-floating btn-fb mx-1">
+              <a href="https://www.facebook.com/Skillcrush/"> <i class="fab fa-facebook-f fa-2x"> </i></a>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://twitter.com/Skillcrush" class="btn-floating btn-tw mx-1">
+            <i class="fab fa-twitter fa-2x"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://www.instagram.com/skillcrush/" class="btn-floating btn-gplus mx-1">
+              <i class="fab fa-instagram fa-2x"></i></a>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://www.linkedin.com/school/skillcrush/" class="btn-floating btn-li mx-1">
+            <i class="fab fa-linkedin-in fa-2x"> </i>
+          </a>
+        </li>
+      </ul>
+   
     </div>
-  </footer
-    
-    <!-- #footer -->
-
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
-<script src="wow.min.js" type="text/javascript"></script>
+    <div class="footer-copyright text-center">© 2019 Copyright: 
+      <a href="#"> Ricardo Loria</a>
+    </div>
+  </footer>
+  <!-- Footer -->
+  
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>  
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>  
 <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.7.0/d3.min.js"></script>                                                          
 <script src="eskju.jquery.scrollflow.min.js"></script>
 </body>
-
 </html>
