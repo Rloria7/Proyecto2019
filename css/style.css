@@ -47,7 +47,14 @@ padding-top: 10px;
 padding-bottom: 10px;
 }
 .navbar{
- background-color: transparent !important;
+ .navbar li a:hover{
+  color: #fff !important;
+  background-color: #61D2B4 !important;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 25px;
+  transition: 0.5s ease-in;
+}
 }
 /* seccion trabajo */
 .container-card{
