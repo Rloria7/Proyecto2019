@@ -5,7 +5,6 @@ html{
 body {
   background:#fff;
   margin: 0;
-  padding:0;
   color: #fff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -47,16 +46,6 @@ padding-bottom: 10px;
 padding-top: 10px;
 padding-bottom: 10px;
 }
-.navbar{
- .navbar li a:hover{
-  color: #fff !important;
-  background-color: #61D2B4 !important;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-radius: 25px;
-  box-shadow: 5px 5px 5px rgba(0,0,0,0.6);
-  transition: 0.5s ease-in;
-}
 
 /* seccion trabajo */
 .container-card{
@@ -94,11 +83,13 @@ color: #000;
 text-align: center;
 font-size: 50px;
 }
+.bg-light{
+transition: all 1s ease;
+} 
 
 /* seccion contenidos */
-  
-services-seccion{
-padding-top: 5px 5px;
+.servicios{
+padding-top: 10px 10px;
 text-align: center;
 color: #fff;
 font-size: 25px;
